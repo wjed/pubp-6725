@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phishing Awareness — You've Been Phished</title>
+<link rel="icon" href="assets/wicys-logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+    color: #2a2a2a; line-height: 1.6; background: #f4f4f6;
+    display: flex; justify-content: center; padding: 32px 16px;
+    min-height: 100vh;
+  }
+  .card { width: 100%; max-width: 720px; background: #fff; border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12); overflow: hidden; }
+
+  .alert { background: #b30000; color: #fff; text-align: center; padding: 34px 24px; }
+  .alert .emoji { font-size: 46px; display: block; margin-bottom: 8px; }
+  .alert h1 { font-size: 30px; font-weight: 900; letter-spacing: .3px; }
+  .alert p { font-size: 15px; opacity: .95; margin-top: 8px; }
+
+  .body { padding: 30px 34px; }
+  .lead { font-size: 16px; margin-bottom: 20px; }
+
+  .reassure { background: #eaf7e6; border: 1px solid #b6e0a6; color: #245c14;
+    border-radius: 8px; padding: 14px 18px; font-weight: 700; margin-bottom: 26px; }
+
+  h2 { font-size: 18px; color: #5A2D82; margin: 24px 0 10px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  code { background: #f0e9f6; padding: 1px 6px; border-radius: 3px; }
+
+  .footer { margin-top: 30px; border-top: 1px solid #e2e2e6; padding-top: 18px;
+    font-size: 13px; color: #666; }
+  .footer strong { color: #2a2a2a; }
+  .accent { height: 6px; background: #A4CE4E; }
+  a.back { display: inline-block; margin-top: 20px; background: #5A2D82; color: #fff;
+    text-decoration: none; padding: 11px 26px; border-radius: 5px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="alert">
+      <span class="emoji">🎣</span>
+      <h1>Gotcha — You've Been Phished!</h1>
+      <p>The page you just submitted was a <strong>simulated phishing site</strong>, not the real WiCyS portal.</p>
+    </div>
+    <div class="accent"></div>
+
+    <div class="body">
+      <div class="reassure">
+        ✅ Relax — nothing you typed was collected, sent, or stored. This page captures no data.
+      </div>
+
+      <p class="lead">If this had been a real attack, an attacker could now have your username and
+      password. The good news: this was a controlled exercise, and you get a lesson instead of a breach.</p>
+
+      <h2>What this is</h2>
+      <p>This is an educational <strong>phishing-awareness demonstration</strong> built for a Georgia Tech
+      course assignment (PUBP 6725). Its purpose is to show how convincingly a real login page can be
+      cloned, and to help people recognize and resist these attacks in the real world.</p>
+
+      <h2>Red flags you could have caught</h2>
+      <ul>
+        <li><strong>Lookalike domain</strong> — the address wasn't the organization's real one. Always check the URL before typing a password.</li>
+        <li><strong>Manufactured urgency</strong> — "verify by [deadline] to stay active" pressures you to act before thinking.</li>
+        <li><strong>Unexpected request</strong> — an out-of-the-blue email asking you to log in or "re-verify" is a classic lure.</li>
+        <li><strong>Trust in appearances</strong> — a perfect logo, real colors, and a clean layout are easy to copy and prove nothing.</li>
+      </ul>
+
+      <h2>What to do in real life</h2>
+      <ul>
+        <li>Don't click links in unexpected messages — navigate to the site directly, yourself.</li>
+        <li>Check the domain carefully before entering credentials.</li>
+        <li>Use a password manager (it won't autofill on a fake domain) and enable multi-factor authentication.</li>
+        <li>Report suspicious messages to your IT/security team.</li>
+      </ul>
+
+      <div class="footer">
+        <p><strong>Georgia Tech assignment — built by Will Jedrzejczak.</strong></p>
+        <p>PUBP 6725 · Educational phishing-awareness demonstration. Not affiliated with or endorsed by
+        Women in CyberSecurity (WiCyS). No credentials are collected. WiCyS name and branding are used
+        only to illustrate how phishing works.</p>
+      </div>
+
+      <a class="back" href="index.html">← Back to the demo login page</a>
+    </div>
+  </div>
+</body>
+</html>
