@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="icon" href="assets/wicys-logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="login-body">
+    <div class="center-panel">
+      <!-- Community logo -->
+      <div class="community-logo">
+        <img src="assets/wicys-logo.jpg" alt="WiCyS Member Portal" />
+      </div>
+
+      <!-- Login form -->
+      <form class="login-form" onsubmit="return false;" autocomplete="off">
+        <div class="input-container">
+          <span class="input-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/></svg>
+          </span>
+          <input type="text" class="input-box" placeholder="Username" aria-label="Username" autocomplete="off" />
+        </div>
+
+        <div class="input-container">
+          <span class="input-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9zm3 11a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/></svg>
+          </span>
+          <input type="password" class="input-box" placeholder="Password" aria-label="Password" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="login-button">Log in</button>
+
+        <div class="link-row">
+          <a href="#" class="inverse-link">Forgot your password?</a>
+        </div>
+
+        <a href="#" class="purple-button">Become a Member</a>
+
+        <p class="support-text">If you need support please contact
+          <a href="mailto:info@wicys.org" class="inverse-link">info@wicys.org</a>
+        </p>
+
+        <div class="employee-row">
+          <a href="#" class="inverse-link">Are you an employee? Login here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
